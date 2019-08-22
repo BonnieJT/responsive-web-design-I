@@ -345,21 +345,22 @@ a {
 @media(max-width: 500px) {
 	.container {
 		margin: 0 auto;
-		width: 95%;
+		width: 100%;
 	}
 	
 	header {
 		display: flex;
-		flex-flow: wrap-reverse;
-		justify-content: center;
+		flex-direction: column-reverse;
 		width: 100%;
+		margin: 0 auto;
 		padding-top: 10px;
 	}
 	
 	nav {
 		margin-top: 15px;
-		display: inline-flex;
-		justify-content: space-between;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		width: 100%;
 	}
 	
@@ -367,10 +368,19 @@ a {
 		color: gray;
 		font-size: 14px;
 		text-decoration: none;
+		padding: 15px 0;
+		width: 100%;
+		text-align:center;
+		border-top: 1px solid black;
+	}
+
+	a:last-child {
+		border-bottom: 1px solid black;
 	}
 	
 	.logo {
 		padding: 0;
+		align-self: center;
 	}
 	
 	.hero {
@@ -394,7 +404,7 @@ a {
 		top: 0;
 		left: 0;
 		padding: 0;
-		margin: 30px 0;
+		margin: 10px 0;
 
 	}
 	
@@ -418,26 +428,32 @@ a {
 	}
 	
 	.main {
+		width: 90%;
+		margin: 0 auto;
 		border-top: 2px solid black;
 		border-bottom: 2px solid black;
 	}
 	
 	.main-top {
-		margin: 30px 0;
+		margin-top: 50px;
+		height: 100%;
 		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 	
 	.main-top-article {
-		width: 49%;
+		width: 95%;
 		font-size: 14px;
+		margin-bottom: 40px;
 	}
 	
-	.main-top-title {
-		font-size: 16px;	
+	.main-top-article:last-child {
+		margin-bottom: 20px;
 	}
-	
 	.main-top-title {
-		width: 49%;
+		font-size: 14px;
+		font-weight: 600;
 	}
 	
 	.main-top-para {
@@ -447,20 +463,27 @@ a {
 	.main-img {
 		width: 100%;
 		margin-bottom: 30px;
+		display: flex;
 	}
 	
 	.main-bottom {
 		margin-bottom: 30px;
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
 	}
 	
 	.main-bottom-article {
-		width: 32%;
+		width: 95%;
+		margin-bottom: 50px;
+	}
+
+	.main-bottom-article:last-child {
+		margin-bottom: 5px;
 	}
 	
 	.main-bottom-title {
-	
+		font-size: 14px;
+		font-weight: 600;
 	}
 	
 	.main-bottom-para {
@@ -470,15 +493,17 @@ a {
 	.contact {
 		margin: 30px auto;
 		font-size: 14px;
+		width: 90%;
 	}
 	
 	.contact-title {
-		font-size: 16px;
+		font-size: 14px;
+		font-weight: 600;
 	}
 	
 	.footer {
-		margin: 0 auto;
-		width: 720px;
+		margin: 20px auto;
+		width: 95%;
 	}
 	
 	.footer-copyright {
