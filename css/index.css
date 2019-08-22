@@ -72,7 +72,6 @@ h1, h2, h3, h4, h5 {
 
 header {
     display: flex;
-    flex-direction: row;
    	padding-top: 10px;
 }
 
@@ -206,14 +205,14 @@ a {
 	header {
 		display: flex;
 		flex-flow: wrap-reverse;
+		justify-content: center;
 		width: 100%;
 		padding-top: 10px;
 	}
 	
 	nav {
 		margin-top: 15px;
-		display: flex;
-		flex-direction: row;
+		display: inline-flex;
 		justify-content: space-between;
 		width: 100%;
 	}
@@ -226,7 +225,6 @@ a {
 	
 	.logo {
 		padding: 0;
-		align-self: center;
 	}
 	
 	.hero {
