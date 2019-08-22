@@ -1,3 +1,199 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+/*ol, ul {
+	list-style: none;*/
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+.container {
+	margin: 0 auto;
+	width: 880px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+   	padding-top: 10px;
+}
+
+nav {
+    margin-top: 15px;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+a {
+	color: gray;
+	font-size: 14px;
+    text-decoration: none;
+}
+
+.logo {
+	padding-left: 80px;
+}
+
+.hero {
+
+}
+
+.hero-header {
+	display: flex;
+	height: 350px;
+	width: 100%;
+	position: relative;
+    margin: 40px 0;
+}
+
+.hero-header-tag {
+	position: relative;
+	font-size: 60px;
+	width: 55%;
+    top: 25%;
+    left: 3%;
+	text-align: center;
+	line-height: 50px;
+	padding-left: 30px;
+}
+
+.hero-header-tag-title {
+
+} 
+
+.hero-header-tag-btn {
+    width: 140px;
+    background: white;
+}
+
+.hero-header-img {
+	width:44%;
+	padding-left: 30px;
+	text-align: right;
+}
+
+.main {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.main-top {
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-top-article {
+	width: 49%;
+	font-size: 14px;
+}
+
+.main-top-title {
+	font-size: 16px;	
+}
+
+.main-top-para {
+	font-size: 14px;
+}
+
+.main-img {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.main-bottom {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-bottom-article {
+	width: 32%;
+}
+
+.main-bottom-title {
+
+}
+
+.main-bottom-para {
+	font-size: 14px;
+}
+
+.contact {
+	margin: 30px auto;
+    font-size: 14px;
+}
+
+.contact-title {
+	font-size: 16px;
+}
+
+.footer {
+	margin: 0 auto;
+	width: 720px;
+}
+
+.footer-copyright {
+	text-align: center;
+	font-size: 14px;
+}
